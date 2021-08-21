@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/andremiani/UPMedal">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png" alt="Logo" width="500" height="125">
   </a>
 
   <h3 align="center">Welcome to UPMedal Clone Store by André Miani</h3>
