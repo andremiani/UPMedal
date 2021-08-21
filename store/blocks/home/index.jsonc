@@ -1,5 +1,9 @@
 {
   "store.home": { 
+    "parent": { 
+      "header": "header", 
+      "footer": "footer"
+    },
     "blocks": [
       "rich-text"
     ]

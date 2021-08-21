@@ -1,0 +1,31 @@
+.container{
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    padding: 0px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: unset;
+    border-radius: unset;
+    border-bottom: #fff 1px solid;
+}
+
+.searchBarContainer {
+    width: 550px;
+}
+
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input),
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder,
+.searchBarContainer :global(.vtex-input__suffix)
+{
+    background: unset;
+    font-weight: unset;
+    font-family: "Montserrat";
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.searchBarIcon {
+    color: #fff;
+}
