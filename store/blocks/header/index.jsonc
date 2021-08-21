@@ -5,9 +5,9 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+
   "header-layout.desktop": {
     "children": [
-      "flex-layout.col#spacer",
       "sticky-layout#desktop"
     ]
   },
@@ -15,7 +15,8 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
     "props": {

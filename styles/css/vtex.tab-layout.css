@@ -1,0 +1,42 @@
+.container{
+    background-color:#212121;
+    border: unset;
+    border-radius: unset;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.listContainer{
+  background-color:#212121;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: space-around;
+}
+
+.listContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.listItem :global(.vtex-button){
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: unset;
+  height: 50px;
+  width: 150px;
+  font-size: 0.8em;
+  
+}
+
+.listItem :focus{
+  color: #59ff00;
+ }
+
+ .listItemActive {
+    border-bottom: 2px solid #59FF00;
+    color: #59FF00; 
+}
+
+.listContainer{
+    justify-content: start;
+}
