@@ -1,4 +1,10 @@
 {
+  "store.custom": {
+    "parent": { 
+      "header": "header", 
+      "footer": "footer"
+    }
+  },
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
