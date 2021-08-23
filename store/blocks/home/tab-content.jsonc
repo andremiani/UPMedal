@@ -1,0 +1,179 @@
+{
+    //SEARCH-RESULT
+  "search-result-layout.customQuery#promocao": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "UpMedal",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "corinthians",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "palmeiras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "UpMedal/Signos",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#divertidos": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "Kit UpMedal/Divertidos",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#maravilhas": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "Kit UpMedal/Maravilhas",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField" : "Kit UpMedal/Guerreiros",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "search-content#home"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content#home": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+						"(min-width:1300px)": 2,
+						"desktop": 2,
+						"tablet": 2,
+						"mobile": 1
+					}
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+			"ListSummary": "product-summary.shelf#lp",
+			"GridSummary": "product-summary.shelf#lp"
+      
+    }
+  },
+
+	"product-summary.shelf#lp": {
+    "children": [
+        "product-summary-name",
+        "product-images#lp",
+				"vtex.product-highlights@2.x:product-highlights"
+				
+    ]
+  },
+
+	"product-images#lp": {
+		"props" : {
+			"showNavigationArrows": true,
+			"showPaginationDots": true
+		}
+	},
+
+	"vtex.product-highlights@2.x:product-highlights": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  }
+
+}
