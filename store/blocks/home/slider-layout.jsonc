@@ -1,0 +1,50 @@
+{
+    "slider-layout#home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "slideContainer"
+        },
+        "children": ["link#slider1", "link#slider2"]
+      },
+    
+      "link#slider1": {
+        "props": {
+          "href": "#",
+    
+          "blockClass": "slider-home-link"
+        },
+        "children": [
+          "image#slider1"
+        ]
+      },
+    
+      "image#slider1": {
+        "props": {
+          "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
+          "blockClass": "sliderItem"
+        }
+      },
+    
+      "link#slider2": {
+        "props": {
+          "href": "#",
+          "blockClass": "slider-home-link"
+        },
+        "children": [
+          "image#slider2"
+        ]
+      },
+    
+      "image#slider2": {
+        "props": {
+          "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
+          "blockClass": "sliderItem"
+        }
+      }
+}

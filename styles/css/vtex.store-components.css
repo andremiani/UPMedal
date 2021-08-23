@@ -14,7 +14,6 @@
     width: 550px;
 }
 
-
 .searchBarContainer :global(.vtex-styleguide-9-x-input),
 .searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder,
 .searchBarContainer :global(.vtex-input__suffix)
@@ -29,3 +28,37 @@
 .searchBarIcon {
     color: #fff;
 }
+
+
+.slideContainer {
+    width: 912px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+
+.imageElement--sliderItem {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+
+.sliderArrows {
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    margin-top: 355px;
+    margin-left: 255px;
+    margin-right: 255px;
+}
+
+.paginationDot {
+    margin-top: 250px;
+}
+
+
+
